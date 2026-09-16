@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <title>Baby Shower - Invitación</title>
+    <meta name="description" content="Acompáñanos a celebrar nuestro Baby Shower.">
+
+    <!-- WhatsApp / Social Media Meta Tags -->
+    <meta property="og:title" content="Baby Shower - Invitación">
+    <meta property="og:description" content="¡Acompáñanos a celebrar este momento tan especial en nuestro Baby Shower!">
+    <meta property="og:image" content="https://adrimexico1.github.io/invitacionBabyShower/assets/2.webp">
+    <meta property="og:url" content="https://adrimexico1.github.io/invitacionBabyShower/">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=443">
+</head>
+
+<body>
+    <!-- Portada -->
+    <section id="cover" class="cover-section" style="background: var(--bg-main); padding: 0;">
+        <div class="invitation-image-container" id="open-invitation" style="margin: 0; padding: 0;">
+            <img src="assets/1.webp" alt="Invitación Baby Shower" class="entry-invitation-img"
+                style="max-height: 90vh;">
+        </div>
+
+        <div style="display: none;">
+            <div id="guest-greeting-container">
+                <p id="guest-greeting-text">¡Hola <span id="guest-name-text"></span>!</p>
+                <span class="ticket-count" id="guest-tickets-count">0</span>
+                <p id="guest-tickets-label">Pases para adulto</p>
+                <div id="guest-ninos-display"><span id="guest-ninos-count"></span><span id="guest-ninos-label"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitación Completa (Oculta inicialmente) -->
+    <main id="main-invitation" class="invitation-hidden">
+        <!-- Hero Section -->
+        <section class="hero-section"
+            style="background: var(--bg-main); display: flex; justify-content: center; align-items: center;">
+            <div class="hero-image-container"
+                style="width: 100%; max-width: 600px; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/2.webp" alt="Portada Baby Shower" class="hero-img"
+                    style="width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section"
+            style="background: var(--bg-main); padding: 0; display: flex; justify-content: center; align-items: center;">
+            <div class="message-image-container"
+                style="width: 100%; max-width: 600px; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/3.webp" alt="Padres Baby Shower" class="message-img"
+                    style="width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+            </div>
+        </section>
+
+        <!-- Fecha + Countdown Section -->
+        <section class="fecha-countdown-section"
+            style="background: var(--bg-main); padding: 0; display: flex; justify-content: center; align-items: center;">
+            <div class="fecha-image-wrapper"
+                style="width: 100%; max-width: 600px; padding: 0 20px; position: relative; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/4.webp" alt="Fecha Baby Shower" class="fecha-img"
+                    style="width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+                <!-- Countdown overlay on top of image -->
+                <div id="countdown" class="countdown-overlay">
+                    <div class="countdown-overlay-timer">
+                        <div class="countdown-overlay-item">
+                            <span id="days" class="countdown-overlay-number">00</span>
+                            <label class="countdown-overlay-label">Días</label>
+                        </div>
+                        <div class="countdown-overlay-item">
+                            <span id="hours" class="countdown-overlay-number">00</span>
+                            <label class="countdown-overlay-label">Horas</label>
+                        </div>
+                        <div class="countdown-overlay-item">
+                            <span id="minutes" class="countdown-overlay-number">00</span>
+                            <label class="countdown-overlay-label">Min</label>
+                        </div>
+                        <div class="countdown-overlay-item">
+                            <span id="seconds" class="countdown-overlay-number">00</span>
+                            <label class="countdown-overlay-label">Seg</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section (5.webp) -->
+        <section class="location-section-img"
+            style="background: var(--bg-main); padding: 0; display: flex; justify-content: center; align-items: center;">
+            <div class="location-image-wrapper"
+                style="width: 100%; max-width: 600px; padding: 0 20px; position: relative; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/5.webp" alt="Recepción y Ubicación Baby Shower" class="location-img"
+                    style="width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+                <a href="https://maps.app.goo.gl/p5byVBFXfoSFGat7A?g_st=iw" target="_blank" rel="noopener noreferrer"
+                    class="btn-location-overlay">
+                    <svg class="location-pin-icon" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>VER UBICACIÓN</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section"
+            style="background: var(--bg-main); padding: 0; display: flex; justify-content: center; align-items: center;">
+            <div class="message-image-container"
+                style="width: 100%; max-width: 600px; padding: 0 20px; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/6.webp" alt="Padres Baby Shower" class="message-img"
+                    style="width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+            </div>
+        </section>
+
+    </main>
+
+    <div class="music-player">
+        <button id="music-toggle" class="music-btn pulse">
+            <span class="icon-music"></span>
+        </button>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="music/cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js?v=50"></script>
+</body>
+
+</html>
