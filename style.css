@@ -155,40 +155,55 @@ body {
     animation: slideUpFade 1.2s both;
 }
 
-/* --- Image Sections --- */
+/* --- Continuous Invitation Layout --- */
 
-.hero-section,
-.message-section,
-.fecha-countdown-section {
-    background: var(--bg-main);
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.hero-image-container,
-.message-image-container,
-.fecha-image-wrapper {
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.invitation-continuous-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    background-color: #ffffff;
     position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.hero-img,
-.message-img,
-.fecha-img {
+.invitation-page-block {
+    position: relative;
     width: 100%;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    margin: 10px 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.continuous-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Subtle Gradient Blends at the Seams */
+.blend-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.35) 45%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    z-index: 4;
+}
+
+.blend-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.35) 55%, rgba(255, 255, 255, 0.9) 100%);
+    pointer-events: none;
+    z-index: 4;
 }
 
 /* --- Countdown Overlay on 4.webp --- */
@@ -201,6 +216,7 @@ body {
     z-index: 10;
     text-align: center;
     pointer-events: none;
+    line-height: 1.2;
 }
 
 .countdown-overlay-timer {
@@ -256,34 +272,6 @@ body {
 
 /* --- Location Button Overlay on 5.webp --- */
 
-.location-section-img {
-    background: var(--bg-main);
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.location-image-wrapper {
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.location-img {
-    width: 100%;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    margin: 10px 0;
-}
-
 .btn-location-overlay {
     position: absolute;
     top: 43%;
@@ -308,6 +296,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
+    line-height: normal;
 }
 
 .btn-location-overlay:hover {
