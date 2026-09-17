@@ -274,7 +274,7 @@ body {
 
 .btn-location-overlay {
     position: absolute;
-    top: 43%;
+    top: 34%;
     left: 42%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -320,7 +320,7 @@ body {
 
 @media (max-width: 480px) {
     .btn-location-overlay {
-        top: 43%;
+        top: 34%;
         left: 42%;
         padding: 0.6rem 1.25rem;
         font-size: 0.75rem;
